@@ -10,7 +10,7 @@ import java.util.UUID;
 public class DateTest {
 
     public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("Postgres");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgresDS");
         EntityManager manager = factory.createEntityManager();
 
         Query dateQuery = manager.createQuery("select d from Date d");

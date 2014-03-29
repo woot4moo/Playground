@@ -11,7 +11,7 @@ public class RecordTest {
 
 
     public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("Postgres");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgresDS");
         EntityManager manager = factory.createEntityManager();
 
         Query query = manager.createQuery("select r from Record r");

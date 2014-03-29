@@ -11,7 +11,7 @@ import java.util.UUID;
 public class TextTest {
 
     public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("Postgres");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgresDS");
         EntityManager manager = factory.createEntityManager();
 
         Query textQuery = manager.createQuery("select t from Text t");
