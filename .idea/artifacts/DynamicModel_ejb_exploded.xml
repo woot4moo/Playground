@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="DynamicModel:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/DynamicModel_ejb_exploded.rar</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DynamicModel/ejb/EJB" />
+      <element id="module-output" name="DynamicModel" />
+    </root>
+  </artifact>
+</component>
