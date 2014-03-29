@@ -5,6 +5,7 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.example.model.jpa.Record</class>
         <class>com.example.model.jpa.Text</class>
+        <class>com.example.model.jpa.Date</class>
         <properties>
             <property name="javax.persistence.target-database" value="PostgreSQL" />
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
