@@ -23,7 +23,7 @@ public class RecordTest {
 
         manager.getTransaction().begin();
         Record record = new Record();
-        record.setRecordId(UUID.randomUUID());
+        record.setRecordId(UUID.randomUUID().toString());
         manager.persist(record);
         manager.getTransaction().commit();
         manager.close();

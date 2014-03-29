@@ -1,13 +1,10 @@
 package com.example.model.jpa;
 
-import org.hibernate.annotations.Type;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.UUID;
 
 /**
  * Represents the abstract container of a record.  A record allows us to link together attributes.
@@ -25,26 +22,18 @@ import java.util.UUID;
  *
  */
 @Entity
-@Table(name="RECORDS")
+@Table(name= "records")
 public class Record implements Serializable{
     @Id
     @Column(name="record_id")
-    @Type(type="pg-uuid")
-    private UUID recordId;
+    private String recordId;
 
-    public UUID getRecordId() {
+    public String getRecordId() {
         return recordId;
     }
 
-    public void setRecordId(UUID recordId) {
+    public void setRecordId(String recordId) {
         this.recordId = recordId;
-    }
-
-    @Override
-    public String toString() {
-        return "Record{" +
-                "recordId=" + recordId +
-                '}';
     }
 
     @Override
@@ -54,12 +43,20 @@ public class Record implements Serializable{
 
         Record record = (Record) o;
 
-        return !(recordId != null ? !recordId.equals(record.recordId) : record.recordId != null);
+        if (recordId != null ? !recordId.equals(record.recordId) : record.recordId != null) return false;
 
+        return true;
     }
 
     @Override
     public int hashCode() {
         return recordId != null ? recordId.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "recordId='" + recordId + '\'' +
+                '}';
     }
 }
