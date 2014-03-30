@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="dynamic">
+    <output-path>C:/jboss-eap/jboss-eap-6.1/standalone/deployments/</output-path>
+    <root id="archive" name="dynamic.war">
+      <element id="javaee-facet-resources" facet="DynamicModel/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DynamicModel" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Jersey-2.2" />
+          <element id="library" level="project" name="WebSocket-1.0" />
+          <element id="library" level="project" name="javax.resource-api-1.7" />
+          <element id="library" level="project" name="javax.json.processing-1.0" />
+          <element id="library" level="project" name="javax.transaction-api-1.2" />
+          <element id="library" level="project" name="ConcurrencyUtilities-1.0" />
+          <element id="library" level="project" name="javax.jms-api.jar-2.0" />
+          <element id="library" level="project" name="Hibernate Validator-5.0.1" />
+          <element id="library" level="project" name="JBoss Weld-2.0.3" />
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

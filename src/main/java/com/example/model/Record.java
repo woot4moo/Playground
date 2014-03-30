@@ -23,6 +23,8 @@ public final class Record {
         this.texts = texts;
     }
 
+    public Record(){}
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

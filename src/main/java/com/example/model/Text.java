@@ -2,7 +2,6 @@ package com.example.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -14,16 +13,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public final class Text {
 
-    @XmlElement
     private String recordId;
-    @XmlElement
     private String textId;
-    @XmlElement
     private String name;
-    @XmlElement
     private String value;
-    @XmlElement
     private int position;
+
 
     public String getRecordId() {
         return recordId;
